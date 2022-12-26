@@ -13,6 +13,27 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Halaman Home
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+});
+
+// Halaman About
+Route::get('/about', function () {
+    return view('about');
+});
+
+// Halaman Place
+Route::get('/places', function () {
+    return view('places');
+});
+
+// Halaman Story
+Route::get('/story', function () {
+    return view('story');
+});
+
+// City
+Route::get('/city', function () {
+    return view('city');
 });
