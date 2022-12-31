@@ -20,6 +20,7 @@
             <main class="form-signin w-100 m-auto">
                 <h1 class="h3 mb-3 fw-normal text-center">Please Login</h1>
                 <form action="/login" method="post">
+                    <img src="img/wisma.png" width="120"class="m-auto">
                     @csrf
                     <div class="form-floating">
                         <input type="email" name="email" class="form-control @error('email') is-invalid @enderror"
