@@ -1,0 +1,209 @@
+* 
+{
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+::-webkit-scrollbar{
+  width: 12px;
+}  
+::-webkit-scrollbar-thumb{
+  background:rgb(0, 0, 0);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}  
+::-webkit-scrollbar-thumb:hover{
+  background:rgb(64,224, 208);
+}
+body{
+  text-align: center;
+  background-color: #e2dede;
+}
+
+/* START TESK SANSS */
+.kata {
+  text-align: left;
+  
+}
+
+.kata h1{
+  margin-top: 4%;
+  margin-left: 1%;
+  position: relative;
+  font-size: 50px;
+  color: #0c0d13;
+  text-transform: uppercase;
+  font-family: "warma12", arial;
+}
+
+.kata h1::before {
+  content: attr(data-text);
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 60px;
+  color:#00c3ff;
+  border-right: 2px solid #00c3ff;
+  text-shadow:-2px  2px 10px turquoise ;
+  overflow: hidden;
+  animation: animate 6s linear infinite;
+  -webkit-animation: animate 6s linear infinite;
+  -moz-animation:animate 6s linear infinite ;
+  -ms-animation: animate 6s linear infinite ;
+}
+
+/* kata h1 */
+.kata2 h1{
+  margin-top: 3%;
+  font-size: 50px;
+  color: hsl(0, 0%, 0%);
+}
+
+.kata2 h1 span 
+{
+  color: #15ff00;
+  margin-top: 3%;
+  font-size: 50px;
+  text-shadow:-2px  1px 4px #0c0d13;
+}
+
+/* Kata h2 */
+.kata2 h2{
+  margin-top: 3%;
+  margin-left: 1%;
+  font-size: 20px;
+  color: hsl(0, 0%, 0%);
+  margin-left: 2%;
+}
+.kata2 p{
+  font-size: 18px;
+  margin-left: 2%;
+}
+
+.heading h1 
+{
+  font-size: 40px;
+  color: #0c0d13;
+  padding-top: 80px;
+  margin-bottom: 20px;
+}
+  
+.kata2 h2 span 
+{
+  color: #00eeff;
+  margin-top: 3%;
+  margin-left: 1%;
+  font-size: 20px;
+  text-shadow:-2px  1px 4px #0c0d13;
+}
+
+@keyframes animate
+{
+  0%,10%,100%
+  {
+    width:0;
+  }
+  0%,10%,100%
+  {
+    width:0;
+  }
+  60%,80%
+  {
+    width: 50%;
+  }
+}
+@media (max-width: 650px) {
+  @keyframes animate
+  {
+    0%,10%,100%
+    {
+      width:0;
+    }
+    0%,10%,100%
+    {
+      width:0;
+    }
+    60%,80%
+    {
+      width: 70%;
+    }
+  }
+}
+/* END */
+
+
+
+/*Start Animasi Tombol */
+.wow button 
+{
+  border: none;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0c0d13;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 2%;
+  text-transform: capitalize;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  height: 30px;
+  width: 110px;
+  background: #0c0d13;
+  color: #fff;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+  
+.wow button::before 
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #00c3ff;
+  height: 100%;
+  width: 0%;
+  -webkit-transition: .2s;
+  transition: .2s;
+  z-index: -1;
+}
+  
+.wow button:hover::before 
+{
+  width: 100%;
+}
+  
+.wow button:hover 
+{
+  color: #333;
+}
+/* End */
+
+  .form-signin .form-floating:focus-within {
+    z-index: 2;
+  }
+  
+  .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .form-registration input{
+    border-radius: 0;
+    margin-bottom: -1px;
+  }
