@@ -16,7 +16,7 @@
         
     </div>
 
-
+    <img src="img/team.png" width="250"class="m-auto">
 <div class="row mt-4">
         <h1 class="text-center mb-3"><p><b>Our Team dev</b></p></h1>
         <div class="col-md-3 col-sm-10">
