@@ -1,5 +1,5 @@
 <nav class="relative px-4 py-4 flex justify-between items-center bg-white">
-    <img src="img/wisma2.png" width="40"alt="">  <a class="navbar-brand text-sm font-bold text-green-600 px-2" href="\"> Wisma.com </a>
+    <a class="navbar-brand text-sm font-bold text-green-600 px-2" href="\"><img src="img/wisma2.png" width="40"alt="" class="m-auto"> Wisma.com </a>
     <div class="lg:hidden">
         <button class="navbar-burger flex items-center text-blue-600 p-3">
             <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -28,8 +28,18 @@
         </li>
         <li><a class="text-sm text-gray-400 hover:text-blue-500 font-bold {{ $active == 'about' ? 'active' : '' }} " href="/about">About</a></li>
     </ul>
+@auth
+    <a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-100 hover:bg-blue-100 text-sm text-gray-900 font-bold  rounded-xl transition duration-200"  href="/dashboard">Dashboard</a>
+        <a class="hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl transition duration-200 ">
+            <form action="/logout" method="post">
+                @csrf
+                <button type="submit" class="dropdown-item">Logout</button>
+            </form>
+        </a>   
+@else
     <a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-100 hover:bg-blue-100 text-sm text-gray-900 font-bold  rounded-xl transition duration-200 {{ $active == 'login' ? 'active' : '' }} " href="/login">Sign In</a>
     <a class="hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl transition duration-200 {{ $active == 'register' ? 'active' : '' }} " href="/register">Sign up</a>
+@endauth
 </nav>
 <div class="navbar-menu relative z-50 hidden">
     <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
@@ -64,8 +74,18 @@
 
         <div class="mt-auto">
             <div class="pt-6">
-                <a class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-300 rounded-xl {{ $active == 'login' ? 'active' : '' }} " href="/login">Sign in</a>
-                <a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700  rounded-xl {{ $active == 'register' ? 'active' : '' }} " href="/register">Sign Up</a>
+                @auth
+                    <a class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-300 rounded-xl"  href="/dashboard">Dashboard</a>
+                        <a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700  rounded-xl ">
+                            <form action="/logout" method="post">
+                                @csrf
+                                <button type="submit" class="dropdown-item">Logout</button>
+                            </form>
+                        </a>   
+                @else
+                    <a class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-300 rounded-xl {{ $active == 'login' ? 'active' : '' }} " href="/login">Sign in</a>
+                    <a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700  rounded-xl {{ $active == 'register' ? 'active' : '' }} " href="/register">Sign Up</a>
+                @endauth    
             </div>
             <p class="my-4 text-xs text-center text-gray-400">
                 <span>Copyright Magnumm|Wisma.com © 2022</span>
