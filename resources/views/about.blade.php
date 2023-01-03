@@ -6,8 +6,7 @@
             <h1><b>About<span> Us</span></b></h1>
         </div>
     <div data-aos="fade-right" data-aos-duration="1500">
-        <h3>Selamat Datang di Wisma.com!!!
-            Hai sobat Wisma semua Semoga selalu.
+        <h3>Selamat Datang di Wisma.com!!!.
             <p>Website Wisma ini kami buat dengan sengaja untuk forum artikel yang menyediakan tentang kisah perjalan liburan di berbagai daerah indonesia</p>   
             <p>dengan adanya website anda bisa mencari lokasi wisata yang menarik yang ingin anda kunjungi bersama keluarga atau orang-orang tercinta.</p>
         </h3>
@@ -27,7 +26,7 @@
                     alt="..."
                 />
                 <div class="card-body">
-                    <h5 class="card-title">Febrian Fauzan Rachman</h5>
+                    <h5 class="card-title">Febrian Fauzan Rachman-Team Lead</h5>
                     <p class="card-text">203040057</p>
                     <ul class="nav justify-content-end">
                     </ul>
@@ -42,7 +41,7 @@
                     alt="..."
                 />
                 <div class="card-body">
-                    <h5 class="card-title">Alif Luqman Hakim</h5>
+                    <h5 class="card-title">Alif Luqman Hakim | Front-End</h5>
                     <p class="card-text">203040046</p>
                     <ul class="nav justify-content-end">
                     </ul>
@@ -57,7 +56,7 @@
                     alt="..."
                 />
                 <div class="card-body">
-                    <h5 class="card-title">Ikhsan Rachmat Alghifari</h5>
+                    <h5 class="card-title">Ikhsan Rachmat Alghifari | Back-End</h5>
                     <p class="card-text">203040042</p>
                     <ul class="nav justify-content-end">
                     </ul>
@@ -72,14 +71,14 @@
                     alt="..."
                 />
                 <div class="card-body">
-                    <h5 class="card-title">Yusuf Wahyu Syahroni</h5>
+                    <h5 class="card-title">Yusuf Wahyu Syahroni | Front-End</h5>
                     <p class="card-text">203040052</p>
                     <ul class="nav justify-content-end">
                     </ul>
                 </div>
             </div>
         </div>
-    </div>
+</div>
 
     <div class="row mt-5 justify-content-center">
         <h1 class="text-center mb-4 "><b>Contact Us</b></h1>
@@ -93,15 +92,16 @@
                     </p>
                 </div>
             </div>
-            <iframe
+            <div class="mb-3">
+                <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.2015785999074!2d107.59059581487186!3d-6.866431369089696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6be3e8a0c49%3A0x730028bf4627def4!2sUniversitas%20Pasundan!5e0!3m2!1sen!2sid!4v1639199288259!5m2!1sen!2sid"
-                width="525"
+                width="510"
                 height="305"
                 style="border: 0"
                 allowfullscreen=""
                 loading="lazy"
-                class="d-none d-md-block"
-            ></iframe>
+                ></iframe>
+            </div >
         </div>
         <div class="col-md-5 text-left">
             <form action="https://formsubmit.co/wisatamagnum@gmail.com" method="POST">
@@ -132,7 +132,7 @@
                     ></textarea>
                     <label for="floatingTextarea2"></label>
                 </div>
-                <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                <button type="submit" class="btn btn-primary mt-3 text-dark ">Submit</button>
             </form>
         </div>
 </div>

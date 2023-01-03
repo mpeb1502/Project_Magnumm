@@ -34,7 +34,7 @@
                         <input type="password" name="password" class="form-control" id="password" placeholder="Password">
                         <label for="password">Password</label>
                     </div>
-                    <button class="w-100 btn btn-lg btn-primary" type="submit">Login</button>
+                    <button class="w-100 btn btn-lg  btn-primary text-dark" type="submit">Login</button>
                 </form>
                 <small class="d-block text-center mt-3">Not Registered? <a href="/register">Register Now!</a></small>
             </main>

@@ -12,11 +12,11 @@
         <h1 class="mt-1 mb-4"><b>Wellcome to wisma.com Enjoy read our story</b></h1>
         <h2 class="mb-5 mb-sm-0">
             Take a rest from your job for travel around and chilling.
+            <p>
+                Travel around indonesia with view and best experience. We
+                provide any request you need for enjoy the read story.
+            </p>
         </h2>
-        <h6 class="mt-4 col-12 mb-sm-0 mt-sm-1">
-            Travel around indonesia with view and best experience. We
-            provide any request you need for enjoy the read story.
-        </h6>
         <a href="/blog" class="btn btn-primary mt-5 mb-3">
             Read Story
         </a>
