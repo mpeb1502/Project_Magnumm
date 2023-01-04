@@ -5,20 +5,18 @@
         <div data-aos="fade-down" data-aos-duration="1500" class="kata2">
             <h1><b>About<span> Us</span></b></h1>
         </div>
-    <div data-aos="fade-right" data-aos-duration="1500">
+    <div data-aos="zoom-out" data-aos-duration="1500">
         <h3>Selamat Datang di Wisma.com!!!.
             <p>Website Wisma ini kami buat dengan sengaja untuk forum artikel yang menyediakan tentang kisah perjalan liburan di berbagai daerah indonesia</p>   
             <p>dengan adanya website anda bisa mencari lokasi wisata yang menarik yang ingin anda kunjungi bersama keluarga atau orang-orang tercinta.</p>
         </h3>
     </div>
-    <div data-aos="fade-left" data-aos-duration="1500">
-        
-    </div>
 
-    <img src="img/team.png" width="250"class="m-auto">
+
+    <img data-aos="zoom-in-up" data-aos-duration="1500" src="img/team.png" width="250"class="m-auto">
 <div class="row mt-4">
-        <h1 class="text-center mb-3"><p><b>Our Team dev</b></p></h1>
-        <div class="col-md-3 col-sm-10">
+        <h1 data-aos="fade-up" data-aos-duration="1500" class="text-center mb-3"><p><b>Our Team dev</b></p></h1>
+        <div data-aos="zoom-in-up" data-aos-duration="1500" class="col-md-3 col-sm-10">
             <div class="card border border-dark">
                 <img
                     src="img/komuk.png"
@@ -33,7 +31,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
+        <div data-aos="zoom-in-up" data-aos-duration="1500" class="col-md-3">
             <div class="card border border-dark">
                 <img
                     src="img/komuk.png"
@@ -48,7 +46,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
+        <div data-aos="zoom-in-up" data-aos-duration="1500" class="col-md-3">
             <div class="card border border-dark">
                 <img
                     src="img/komuk.png"
@@ -63,7 +61,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
+        <div data-aos="zoom-in-up" data-aos-duration="1500" class="col-md-3">
             <div class="card border border-dark">
                 <img
                     src="img/komuk.png"
@@ -80,7 +78,7 @@
         </div>
 </div>
 
-    <div class="row mt-5 justify-content-center">
+<div class="row mt-4 justify-content-center">
         <h1 class="text-center mb-4 "><b>Contact Us</b></h1>
         <div class="col-md-5 col-sm-12">
             <div class="card text-dark bg-light mb-3">
@@ -138,6 +136,8 @@
 </div>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-    AOS.init();
+    AOS.init({
+        once: true,
+    });
 </script>
 @endsection
