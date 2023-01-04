@@ -1,7 +1,8 @@
 @extends('layouts.main')
 @section('container')
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <div class="row mt-3 p-2">
-    <div class="col-md-6 col-sm-12 p-2">
+    <div data-aos="zoom-out" data-aos-duration="1500" class="col-md-6 col-sm-12 p-2">
         <img
             src="https://source.unsplash.com/600x300?nature,mountain"
             class="rounded col-sm-12 img-fluid border border-dark"
@@ -9,18 +10,18 @@
         />
     </div>
     <div class="col-md-6 col-sm-12 p-3">
-        <h1 class="mt-1 mb-4"><b>Wellcome to wisma.com Enjoy read our story</b></h1>
-        <h2 class="mb-5 mb-sm-0">
+        <h1 data-aos="fade-down" data-aos-duration="1500" class="mt-1 mb-4"><b>Wellcome to wisma.com Enjoy read our story</b></h1>
+        <h2 data-aos="fade-left" data-aos-duration="1500" class="mb-5 mb-sm-0">
             Take a rest from your job for travel around and chilling.
             <p>
                 Travel around indonesia with view and best experience. We
-                provide any request you need for enjoy the read story.
+                provide any request you need for enjoy the read story,there are various stories from various regions.
             </p>
         </h2>
-        <a href="/blog" class="btn btn-primary mt-5 mb-3">
-            Read Story
-        </a>
-        <div class="row">
+            <a data-aos="zoom-out-up" data-aos-duration="1500" href="/blog" class="btn btn-primary mt-5 mb-3">
+                Read Story
+            </a>
+        <div data-aos="zoom-in" data-aos-duration="1500" class="row">
             <div class="col">
                 <i class="bi-map"></i>
                 <p>25+ Places</p>
@@ -33,7 +34,7 @@
     </div>
 </div>
 
-<div class="row mt-3 p-2">
+<div data-aos="fade-up" data-aos-duration="1500" class="row mt-3 p-2">
     <h1 class="mt-1 mb-4 fs-2 "><b>A collection of scenic photos</b></h1>    
 </div>
 
@@ -99,7 +100,7 @@
 
 <div class="col-md-12 col-sm-5 p-5 ">
     <div class="row">
-        <div class="row mt-3 p-2">
+        <div data-aos="fade-up" data-aos-duration="1500" class="row mt-3 p-2">
             <h1 class="mt-1 mb-4 fs-2 "><b>Top Story</b></h1>    
         </div>
         <div class="col-md-4 col-sm-12">
@@ -130,4 +131,11 @@
         </div>
     </div>
 </div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        once: true,
+    });
+</script>
 @endsection

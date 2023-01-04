@@ -10,9 +10,9 @@
     <div class="container">
         <div class="row">
             @foreach ($categories as $category)
-                <div class="col-md-4 mb-4">
+                <div  data-aos="zoom-out" data-aos-duration="1500" class="col-md-4 mb-4">
                     <a href="/blog?category={{ $category->slug }}">
-                        <div class="card border-info text-bg-dark text-white">
+                        <div class=" card border-info text-bg-dark text-white">
                             <img src="img/daerah.jpg?{{ $category->name }}" class="card-img"
                                 alt="{{ $category->name }}">
                             <div class="card-img-overlay d-flex align-items-center p-0">
@@ -29,6 +29,8 @@
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-    AOS.init();
+    AOS.init({
+        once: true,
+    });
 </script>
 @endsection
